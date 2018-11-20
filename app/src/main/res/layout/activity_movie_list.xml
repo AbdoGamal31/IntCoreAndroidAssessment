@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="2dp"
     android:layout_height="match_parent"
     tools:context=".movieviews.MovieListActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/list_item"
+        android:id="@+id/top_rated_movies"
         tools:listitem="@layout/top_rated_movie_item"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
