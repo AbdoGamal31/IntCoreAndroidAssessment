@@ -51,16 +51,16 @@ public class TopRatedMovieListAdapter extends RecyclerView.Adapter<TopRatedMovie
         integer = integer == null ? R.drawable.ic_empty : integer;
         switch (integer) {
             case R.drawable.ic_gold:
-                changeFavIcon(holder, v, R.drawable.ic_empty);
+                changeMovieStateIcon(holder, v, R.drawable.ic_empty);
                 break;
             case R.drawable.ic_empty:
-                changeFavIcon(holder, v, R.drawable.ic_gold);
+                changeMovieStateIcon(holder, v, R.drawable.ic_gold);
             default:
                 break;
         }
     }
 
-    private void changeFavIcon(@NonNull DataViewHolder holder, ImageView v, int ic_empty) {
+    private void changeMovieStateIcon(@NonNull DataViewHolder holder, ImageView v, int ic_empty) {
         holder.favIcon.setImageResource(ic_empty);
         v.setTag(ic_empty);
     }
